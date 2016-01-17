@@ -5,6 +5,13 @@ import {connect} from 'react-redux';
 import {open}  from '../action_creators';
 import Door from './Door'
 
+const style = {
+  listStyle: 'none',
+  display: 'flex',
+  flexFlow: 'row wrap',
+  justifyContent: 'space-around'
+}
+
 export const Calendar = React.createClass({
   mixins: [PureRenderMixin],
   propTypes: {
@@ -34,7 +41,7 @@ export const Calendar = React.createClass({
   },
   render: function() {
     return (
-      <ul>
+      <ul style={style}>
         {this.getDoors().map(door =>
           <Door key={door.day} {...door} open={this.props.open} />
         )}
