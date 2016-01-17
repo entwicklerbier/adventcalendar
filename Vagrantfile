@@ -18,6 +18,9 @@ Vagrant.configure(2) do |config|
 
   config.vm.network 'forwarded_port', guest: 8080, host: 8080
 
+  # sync dist folders
+  config.vm.synced_folder "./dist/", "#{$app_dir}/dist/"
+
 # Don't sync git
   config.vm.synced_folder ".", $app_dir, type: "rsync",
     rsync__exclude: [".git/", "node_modules/"]

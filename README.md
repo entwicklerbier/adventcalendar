@@ -1,7 +1,7 @@
 # Adventcalendar
 A nice little advent calendar written with [redux](https://github.com/rackt/redux).
 
-## Run Development/Test
+## Run Development/Test/Build
 For hot reloading I recommend installing the [better vagrant/rsync plugin](https://github.com/smerrill/vagrant-gatling-rsync).
 
 ```
@@ -20,3 +20,10 @@ open `localhost:8080` and enjoy the hot reloading
 ```
 npm run test:watch
 ```
+
+### Build
+```
+npm run build
+```
+
+You will find the resulting js in `dist`
