@@ -10,5 +10,5 @@ For hot reloading I recommend installing the [better vagrant/rsync plugin](https
 vagrant up
 vagrant ssh
 cd app
-npm test:watch
+npm run test:watch
 ```
