@@ -1,0 +1,39 @@
+{
+  "name": "Adventcalendar",
+  "version": "0.0.1",
+  "description": "A simple advent calendar with react/redux",
+  "main": "index.js",
+  "author": "Markus Klepp",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.@(js|jsx)'",
+    "test:watch": "npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/entwicklerbier/adventcalendar.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/entwicklerbier/adventcalendar/issues"
+  },
+  "homepage": "http://entwicklerbier.github.io/adventcalendar",
+  "dependencies": {
+    "immutable": "^3.7.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "chai": "^3.4.1",
+    "chai-immutable": "^1.5.3",
+    "jsdom": "^7.2.2",
+    "mocha": "^2.3.4"
+  }
+}
